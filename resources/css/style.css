@@ -1,0 +1,141 @@
+/* Main Styles */
+body{
+    font-size: 12pt;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    color: #6D676E;
+}
+
+/* Headings */
+h3{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #272727;
+    text-decoration-line: overline;
+}
+
+h4{
+    font-weight: bold;
+    color: #272727;
+}
+
+/* Iconds about me */
+.material-icons{
+    font-size: 3.5em;
+    color: #468C98;
+    font-weight: bold;
+}
+
+/* General content containers */
+.content-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Title of each content container */
+.content-title{
+    text-align: center;
+    margin-bottom: 6em;
+    padding-top: 1em;    
+}
+
+/* COLORS */
+.desire-color{
+    color: #E84855;
+}
+
+.blue-color{
+    color: #468C98;
+}
+
+.yellow-color{
+    color:#FAA916;
+}
+
+.green-color{
+    color: #68a063;
+}
+
+.purple-color{
+    color: #9055A2;
+}
+
+
+/* Jumbotron */
+.jumbotron{
+    text-align: center;
+    color: #f5fbff;
+    background-color: #272727;
+    border-bottom: 3px solid #468C98;
+}
+
+#jtTitle{
+    font-size: 3.5em;
+}
+
+#btnMain{
+    background-color: transparent;
+    border: 2px solid #468C98;
+    border-radius: 0;
+    padding: 0.5em 1.3em 0.5em 1.3em ;
+    margin-top: 0.5em;
+}
+
+/* vertical alignt for jumbotron */
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  }
+
+/* About Section */
+
+.about-container{
+    display: flex;
+}
+
+.about-description{
+    width: 50%;
+    border-left: 2px solid #468C98;
+    border-right: 2px solid #468C98;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+}
+
+.about-description h4{
+    padding-bottom: 0.5em;
+}
+
+.about-container img{
+    height: 16em;
+    margin-left: 5em;
+    margin-right: 1em;
+}
+
+.principles{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    justify-content: center;
+}
+
+/* skills section */
+
+.skills-container{
+}
+
+.skill{
+    text-align: center;
+    padding-top: 2.5em;
+}
+
+.skill i{
+    padding-bottom: 0.1em;
+}
+
+/* Projects Section */
+
+
