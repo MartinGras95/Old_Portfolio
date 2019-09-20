@@ -150,7 +150,7 @@ h4{
 .card:hover .card-subtitle{
     visibility: visible;
 }
-
+ /* card hover action */
 .card:hover .pimage{
     width: 65%;
     height: inherit;
