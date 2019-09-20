@@ -11,7 +11,7 @@ h3{
     font-size: 2.5em;
     font-weight: bold;
     color: #272727;
-    text-decoration-line: overline;
+    text-decoration-line: overlint-ce;
 }
 
 h4{
@@ -137,5 +137,25 @@ h4{
 }
 
 /* Projects Section */
+
+.pimage{
+    height: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+.card-subtitle{
+    visibility: hidden;
+}
+
+.card:hover .card-subtitle{
+    visibility: visible;
+}
+
+.card:hover .pimage{
+    width: 65%;
+    height: inherit;
+    opacity: 1;
+}
+
 
 
