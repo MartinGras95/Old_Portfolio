@@ -20,144 +20,99 @@
 
     <div class="jumbotron jumbotron-fluid vertical-center ">
        <div class="container">
-          <h1 id="jtTitle">Hi, I'm <span class="desire-color">Martin Gras</span></h1>
+          <h1 id="jtTitle">Hi, I'm <span class="red-color jumbo-name">Martin Gras</span></h1>
           <p class="lead">A Full-Stack Web Developer In The Making.</p>
           <p class="lead">
-           <a id="btnMain" class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+           <a id="btnMain" class="btn btn-primary btn-lg hidden" href="#about-section" role="button">Learn more</a>
            </p>
         </div>
      </div>
 
-      <!-- About -->
-
-     <div class="container content-container">
-       <div class="content-title">
-          <h3>About Me</h3>
+     <!-- About Me -->
+     
+     <div class="container content-container card" id="about-section">
+      <h2 class="section-heading"><strong>About Me</strong></h2>
+       <div class="row">
+         <div class="col pic-container hidden">
+          <img class="profile-pic" src="./resources/images/devimage.png" alt="Developer">
+         </div>
+         <div class="col about-par hidden">
+          <p class="sub-heading"><strong>Long story short..</strong></p>
+          <p>I'm in my 3rd year of <span class="blue-color pop-text">Web Design & Development</span> degree at Edinburgh Napier University.</p>
+          <p>I <span class="red-color pop-text2">enjoy</span> creating <span class="green-color pop-text3">responsive</span> websites which are appealing to look at :)</p>
+          <p class="sub-heading"><strong>Contact Details</strong></p>
+          <p>Martin.Gras95@gmail.com</p>
+         </div>
        </div>
-       
-       <div class="about-container">
-          <img src="./resources/images/devimage.png" alt="Photo of Martin Gras">
-          <div class="about-description">
-            <h4>Long Story Short</h4>
-            <p>
-              I'm a full time web design & development student at Edinburgh Napier University.
-              My core interests lie in developing <span class="desire-color">responsive</span>, 
-              <span class="blue-color">dynamic</span> websites and web apps.
-            </p>
-          </div>
-          <div class="principles">
-            <p>
-                <i class="material-icons desire-color">
-                    mobile_friendly
-                </i>
-                Responsive
-            </p>
+       <!-- Add button here to the next section -->
+     </div>
 
-          <p>
-            <i class="material-icons">
-              autorenew
-              </i>
-              Dynamic
-            </p>
-            <p>
-            <i class="material-icons">
-                sentiment_satisfied_alt
-                </i>
-                User Friendly
-            </p>
-
-          </div>
-        </div>
-      </div>
-
-             <!-- Skills Section -->
-
-      <div class="container content-container">
-        <div class="skills-container">
-            <div class="content-title">
-                <h3>Skills</h3>
-             </div>
-
-
-             <h4>Technologies I work with:</h5>
-          <!-- Web Dev row -->
-          <div class="row web-dev-skills">
-
-              <div class="col-md-3 skill">
-                  <i class="fab fa-html5 fa-8x desire-color"></i>
-                  <p>HTML5</p>
+     <!-- Skills -->
+     <div class="container content-container card" id="skills-section">
+       <h2 class="section-heading"><strong>Skills</strong></h2>
+       <div class="row">
+        <div class="col">
+          <ul class="skills-list">
+            <h3><strong>Front End</strong></h3>
+            <li>
+              <em>HTML5</em>
+              <div class="skill hidden">
+                <div class="skills html"></div>
               </div>
-      
-              <div class="col-md-3 skill">
-                <i class="fab fa-css3-alt fa-8x blue-color"></i>    
-                <p>CSS3</p>       
+            </li>
+            <li>
+              <em>CSS</em>
+              <div class="skill hidden">
+                <div class="skills css"></div>
               </div>
-
-              <div class="col-md-3 skill">
-                  <i class="fab fa-js fa-8x yellow-color"></i>
-                  <p>JavaScript</p>
-                </div>
-              
-                <div class="col-md-3 skill">
-                    <i class="fab fa-node fa-8x green-color"></i>
-                    <p>NodeJS</p>
-                  </div>
-                
-          </div>
-
-          <!-- prog languages row -->
-          <div class="row prog-skills">
-            <div class="col-md-6 skill">
-              <i class="fas fa-database fa-8x"></i>
-              <p>MySQL & MongoDB</p>
-          </div>
-
-          <div class="col-md-6 skill">
-            <i class="fas fa-code fa-8x purple-color"></i>
-            <p>C# & Python</p>
-        </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- PROJECTS SECTION -->
-
-      <div class="container content-container">
-        <div class="projects-container">
-          <div class="content-title">
-            <h3>Projects</h3>
-          </div>
-
-          <!-- Project Cards -->
-
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Colmar Academy</h5>
-              <h6 class="card-subtitle">Fictional university website</h6>
-            </div>
-            <div class="p-container">
-                <img class="pimage" src="./resources/images/colmar.JPG" alt="">
-            </div>
-          </div>
-
-          <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">JumpStart</h5>
-                <h6 class="card-subtitle">Fictional hub for entrepreneurs</h6>
+            </li>
+            <li>
+              <em>JavaScript</em>
+              <div class="skill hidden">
+                <div class="skills js"></div>
               </div>
-              <div class="p-container">
-                  <img class="pimage" src="./resources/images/jumpstart.JPG" alt="">
+            </li>
+            <li>
+              <em>React</em>
+              <div class="skill hidden">
+                <div class="skills react"></div>
               </div>
-  
-            </div>
-  
-
+            </li>
+          </ul>
         </div>
-      </div>
 
-
+        <div class="col back-end-container">
+          <ul class="skills-list">
+            <h3><strong>Back End</strong></h3>
+            <li>
+              <em>Node.js</em>
+              <div class="skill hidden">
+                <div class="skills node"></div>
+              </div>
+            </li>
+            <li>
+              <em>Python & Flask</em>
+              <div class="skill hidden">
+                <div class="skills python"></div>
+              </div>
+            </li>
+            <li>
+              <em>C#</em>
+              <div class="skill hidden">
+                <div class="skills csharp"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+       </div>
+     </div>
      
-     
-    
+     <!-- Projects -->
+     <div>
+
+     </div>
+
+
+     <script src="./resources/js/script.js"></script>
 </body>
 </html>

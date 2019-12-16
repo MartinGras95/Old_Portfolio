@@ -1,29 +1,45 @@
 /* Main Styles */
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-size: 12pt;
     font-family: 'Roboto', sans-serif;
-    background-color: #FFFFFF;
-    color: #6D676E;
+    background-color: #fafafa;
+    color: #272727;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.hidden{
+    opacity: 0;
 }
 
 /* Headings */
-h3{
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #272727;
-    text-decoration-line: overlint-ce;
+.sub-heading{
+    font-size: 1.2rem;
 }
 
-h4{
-    font-weight: bold;
-    color: #272727;
+/* Jumbotron */
+.jumbotron{
+    text-align: center;
+    color: #f5fbff;
+    background-color: #272727;
+    border-bottom: 3px solid #468C98;
 }
 
-/* Iconds about me */
-.material-icons{
+#jtTitle{
     font-size: 3.5em;
-    color: #468C98;
-    font-weight: bold;
+    
+}
+
+.container{
+    padding-right: 0;
+    padding-left: 0;
 }
 
 /* General content containers */
@@ -33,14 +49,23 @@ h4{
     min-height: 100vh;
 }
 /* Title of each content container */
-.content-title{
+.section-heading{
     text-align: center;
-    margin-bottom: 6em;
-    padding-top: 1em;    
+    padding-top: 0.5em ;
+    padding-bottom: 0.5em;
+    margin-bottom: 2em;
+    text-decoration: underline #468C98;
+    color: #f5fbff;
+    background-color: #272727 ;
+}
+
+
+.sub-heading{
+    text-decoration: underline;
 }
 
 /* COLORS */
-.desire-color{
+.red-color{
     color: #E84855;
 }
 
@@ -60,19 +85,6 @@ h4{
     color: #9055A2;
 }
 
-
-/* Jumbotron */
-.jumbotron{
-    text-align: center;
-    color: #f5fbff;
-    background-color: #272727;
-    border-bottom: 3px solid #468C98;
-}
-
-#jtTitle{
-    font-size: 3.5em;
-}
-
 #btnMain{
     background-color: transparent;
     border: 2px solid #468C98;
@@ -90,72 +102,145 @@ h4{
     align-items: center;
   }
 
-/* About Section */
+  /* About section */
 
-.about-container{
-    display: flex;
+  #about-section{
+    border-bottom: 3px solid #468C98;
+    background-color: #f5fbef;
+    background-image: url("../images/grid.png");    
+  }
+
+  .about-par{
+      border-left: 1px solid #468C98;      
+  }
+
+  .pic-container{
+      text-align: center;
+  }
+
+.profile-pic{
+    border-radius: 100%;
+    height: 275px;
+    width: 245px;
+    border-left: 1px solid #468C98;
+    border-right: 1px solid #468C98;
+    padding: 1em 1em 1em 1em;
 }
 
-.about-description{
-    width: 50%;
-    border-left: 2px solid #468C98;
-    border-right: 2px solid #468C98;
-    padding-left: 1em;
-    padding-right: 1em;
-    text-align: center;
-}
+/* Skills section */
 
-.about-description h4{
-    padding-bottom: 0.5em;
-}
 
-.about-container img{
-    height: 16em;
-    margin-left: 5em;
-    margin-right: 1em;
-}
+#skills-section{
+    margin-top: 2em;
+    border-bottom: 3px solid #468C98;
+    background-image: url("../images/grid.png");
 
-.principles{
-    display: flex;
-    flex-direction: column;
-    padding-left: 1em;
-    justify-content: center;
 }
-
-/* skills section */
 
 .skills-container{
+    padding-top: 0.5em;
+
 }
 
-.skill{
-    text-align: center;
-    padding-top: 2.5em;
+.back-end-container{
+    margin-right: 2em;
 }
 
-.skill i{
-    padding-bottom: 0.1em;
+.skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    height: 2em;
+  }
+
+  .skill{
+      background-color: lightgray;
+      height: 2em;
+      margin-bottom: 0.5em;
+  }
+  
+  /* SKILL BARS */
+  .html {width: 80%; background-color: #4CAF50;} /* Green */
+  .css {width: 75%; background-color: #2196F3;} /* Blue */
+  .js {width: 65%; background-color: #f44336;} /* Red */
+  .react {width: 35%; background-color: #eef107;} /* Red */
+  .python {width: 70%; background-color: #f436ab;} /* Red */
+  .node {width: 75%; background-color: #01a365;} /* Red */
+  .csharp {width: 30%; background-color: #949273;} /* Red */
+
+  /* ANIMATIONS */
+
+  .slideIn{
+    -webkit-animation: slideIn ease 1s 1; /* Safari 4+ */
+    -moz-animation:    slideIn ease 1s 1; /* Fx 5+ */
+    -o-animation:      slideIn ease 1s 1; /* Opera 12+ */
+    animation:         slideIn ease 1s 1; /* IE 10+, Fx 29+ */
+  }
+
+  .slideIn2{
+      animation: slideIn2 ease 1.5s 1;
+      -webkit-animation: slideIn2 ease 1.5s 1;
+      -moz-animation: slideIn2 ease 1.5s 1;
+      -o-animation: slideIn2 ease 1.5s 1;
+  }
+
+  .elongate{
+    -webkit-animation: elongate ease 2s 1; /* Safari 4+ */
+    -moz-animation:    elongate ease 2s 1; /* Fx 5+ */
+    -o-animation:      elongate ease 2s 1; /* Opera 12+ */
+    animation:         elongate ease 2s 1; /* IE 10+, Fx 29+ */
+  }
+
+  /* SLIDEIN (X AXIS) */
+  @keyframes slideIn{
+    from   { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+@-webkit-keyframes slideIn {
+    from  { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  @-moz-keyframes slideIn {
+    from   { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  @-o-keyframes slideIn {
+    from   { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+
+  /* SLIDEIN 2 (Y AXIS)*/
+  @keyframes slideIn2{
+    from{transform: translateY(200%); opacity: 0;}
+    to{transform: translateY(0); opacity: 1;}
+}
+@-webkit-keyframes slideIn2{
+  from{transform: translateY(200%); opacity: 0;}
+  to{transform: translateY(0); opacity: 1;}
+}
+@-o-keyframes slideIn2{
+  from{transform: translateY(200%); opacity: 0;}
+  to{transform: translateY(0); opacity: 1;}
+}
+@-moz-keyframes slideIn2{
+  from{transform: translateY(200%); opacity: 0;}
+  to{transform: translateY(0); opacity: 1;}
 }
 
-/* Projects Section */
-
-.pimage{
-    height: 0;
-    opacity: 0;
-    transition: all 0.5s ease-in;
+  /* ELONGATE */
+  @keyframes elongate{
+    from{transform: scaleX(0); opacity: 0;}
+    to{transform: scaleX(100%); opacity: 1;}
 }
-.card-subtitle{
-    visibility: hidden;
+@-webkit-keyframes elongate{
+  from{transform: scaleX(0); opacity: 0;}
+  to{transform: scaleX(100%); opacity: 1;}
 }
-
-.card:hover .card-subtitle{
-    visibility: visible;
+@-moz-keyframes elongate{
+  from{transform: scaleX(0); opacity: 0;}
+  to{transform: scaleX(100%); opacity: 1;}
 }
- /* card hover action */
-.card:hover .pimage{
-    width: 65%;
-    height: inherit;
-    opacity: 1;
+@-o-keyframes elongate{
+  from{transform: scaleX(0); opacity: 0;}
+  to{transform: scaleX(100%); opacity: 1;}
 }
-
-
-
