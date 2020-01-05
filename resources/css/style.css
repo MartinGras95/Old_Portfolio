@@ -171,16 +171,40 @@ ul{
   /* Projects Section */
 
   #projects-section{
+    min-height: 415px;
+  }
+
+  .card-body{
+    height: 0;
+    visibility: hidden;
   }
 
   .project-container{
+    overflow: hidden;
   }
 
-  .project-container img{
-    vertical-align: middle;
+  .project-container img {
+    opacity: 0.7;
     width: 100%;
-    border: 0;
+    
   }
+  .project-container img:hover {
+    opacity: 1;
+  }
+  .project-container:hover .card-body{
+    height: 100%;
+    visibility: visible;
+    background-color: #f44336;
+  }
+  .project-container:hover .project-text{
+    visibility: visible;
+    
+  }
+
+
+  
+
+
   /* ANIMATIONS */
 
   .slideIn{
