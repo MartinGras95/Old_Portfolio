@@ -29,6 +29,10 @@
                 element.classList.add('elongate');
                 element.classList.remove('hidden');
             }
+            if(element.classList.contains('project-container')){
+              element.classList.add('slideIn');
+              element.classList.remove('hidden');
+          }
 
         }
       }
