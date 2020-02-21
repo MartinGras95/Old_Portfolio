@@ -162,8 +162,8 @@ ul{
   /* SKILL BARS */
   .html {width: 80%; background-color: #4CAF50;} /* Green */
   .css {width: 75%; background-color: #2196F3;} /* Blue */
-  .js {width: 65%; background-color: #f44336;} /* Red */
-  .react {width: 35%; background-color: #eef107;} /* Red */
+  .js {width: 70%; background-color: #f44336;} /* Red */
+  .react {width: 65%; background-color: #eef107;} /* Red */
   .python {width: 70%; background-color: #f436ab;} /* Red */
   .node {width: 75%; background-color: #01a365;} /* Red */
   .csharp {width: 30%; background-color: #949273;} /* Red */
