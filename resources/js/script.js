@@ -30,7 +30,7 @@
                 element.classList.remove('hidden');
             }
             if(element.classList.contains('project-container')){
-              element.classList.add('slideIn');
+              element.classList.add('slideIn2');
               element.classList.remove('hidden');
           }
 

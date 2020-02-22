@@ -27,7 +27,7 @@ ul{
 /* NAVBAR */
 /* MEDIA QUERIES */
 /* navbar invisible on mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .navbar{
     visibility: hidden;
   }
@@ -176,6 +176,8 @@ ul{
   .python {width: 70%; background-color: #f436ab;} /* Red */
   .node {width: 75%; background-color: #01a365;} /* Red */
   .csharp {width: 30%; background-color: #949273;} /* Red */
+  .gatsby {width: 60%; background-color: #d6983b;} /* Red */
+
 
   /* Projects Section */
 
@@ -196,6 +198,19 @@ ul{
     overflow: hidden;
   }
 
+  /* MEDIA QUERIES */
+/* project info visible on mobile */
+@media only screen and (max-width: 600px) {
+  .card-body{
+    visibility: visible;
+    height: 100%;
+    background-color: #f44336;
+  }
+  .project-container img{
+    opacity: 1;
+  }
+}
+
   .project-container img {
     opacity: 0.8;
     width: 100%;
@@ -213,6 +228,12 @@ ul{
   .project-container:hover .project-text{
     visibility: visible;
     
+  }
+
+  /* Footer */
+
+  footer{
+    margin-top: 5rem;
   }
 
 
