@@ -24,6 +24,15 @@ ul{
     font-size: 1.2rem;
 }
 
+/* NAVBAR */
+/* MEDIA QUERIES */
+/* navbar invisible on mobile */
+@media only screen and (max-width: 600px) {
+  .navbar{
+    visibility: hidden;
+  }
+}
+
 /* Jumbotron */
 .jumbotron{
     text-align: center;
@@ -36,7 +45,6 @@ ul{
     font-size: 3.5em;
     
 }
-
 
 .container{
     padding-right: 0;
@@ -287,3 +295,4 @@ ul{
   from{transform: scaleX(0); opacity: 0;}
   to{transform: scaleX(100%); opacity: 1;}
 }
+
