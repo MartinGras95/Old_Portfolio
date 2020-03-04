@@ -9,6 +9,10 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #fafafa;
     color: #272727;
+    background-image: url('../images/backgroundimage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
 ul{
@@ -23,6 +27,7 @@ ul{
 .sub-heading{
     font-size: 1.2rem;
 }
+
 
 /* NAVBAR */
 /* MEDIA QUERIES */
