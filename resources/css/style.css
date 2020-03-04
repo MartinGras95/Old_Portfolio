@@ -5,7 +5,7 @@ html{
 }
 
 body{
-    font-size: 12pt;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
     background-color: #fafafa;
     color: #272727;
@@ -127,7 +127,8 @@ ul{
   }
 
   .about-par{
-      border-left: 1px solid #468C98;      
+      border-left: 1px solid #468C98;  
+      padding-right: 2rem;
   }
 
   .pic-container{
