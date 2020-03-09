@@ -63,6 +63,9 @@ ul{
     margin-top: 2em;
     min-height: 100vh;
     border-bottom: 3px solid #468C98;
+    -webkit-box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.59);
+    -moz-box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.59);
+    box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.59);
 
 }
 /* Title of each content container */
@@ -189,19 +192,27 @@ ul{
 
   .project-row{
     margin-bottom: 1em;
+    padding: 0 1em 0 1em;
   }
 
   #projects-section{
-    min-height: 415px;
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    border: none;
+    background-image: url("../images/grid.png");
   }
 
   .card-body{
-    height: 0;
-    visibility: hidden;
+    height: auto;
+  }
+  
+  .project-text{
+    font-size: 0.9em;
   }
 
   .project-container{
-    overflow: hidden;
+    overflow: visible;
+    height: 285px;
   }
 
   /* MEDIA QUERIES */
@@ -225,7 +236,9 @@ ul{
   }
   .project-container img:hover {
     opacity: 1;
-  }
+  
+   }
+
   .project-container:hover .card-body{
     height: 100%;
     visibility: visible;
@@ -234,11 +247,11 @@ ul{
   .project-container:hover .project-text{
     visibility: visible;
     
-  }
+  } 
 
   /* Footer */
 
-  footer{
+  footer {
     margin-top: 5rem;
   }
 
