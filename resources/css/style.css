@@ -217,6 +217,10 @@ ul{
   .card-body{
     height: auto;
   }
+
+  .card-img-top{
+    max-height: 160px;
+  }
   
   .project-text{
     font-size: 0.9em;
