@@ -35,17 +35,18 @@
   </nav>
 
     <!-- jumbotron -->
-
-    <div class="jumbotron jumbotron-fluid vertical-center ">
-       <div class="container">
+      <div class="jumbotron jumbotron-fluid vertical-center ">
+        <div class="container">
           <h1 id="jtTitle">Hi, I'm <span class="red-color jumbo-name">Martin Gras</span></h1>
           <p class="lead">A Full-Stack Web Developer In The Making.</p>
           <p class="lead">
-           <a id="btnMain" class="btn btn-primary btn-lg hidden" href="#about-section" role="button">Learn more</a>
-           </p>
+          <a id="btnMain" class="btn btn-primary btn-lg hidden" href="#about-section" role="button">Learn more</a>
+          </p>
         </div>
-     </div>
-
+        <div id="particles-js">
+        </div>
+    </div>
+    
      <!-- About Me -->
 
      
@@ -208,6 +209,17 @@
      </footer>
 
 
-     <script src="./resources/js/script.js"></script>
+      <script src="./resources/js/script.js"></script>
+         <!-- CDN -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"
+      ></script>
+
+
+      <script>
+        particlesJS.load('particles-js','particles.json',function(){
+        console.log('particles.json loaded...')
+        })
+      </script>
 </body>
 </html>
