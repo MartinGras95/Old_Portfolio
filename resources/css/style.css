@@ -137,6 +137,9 @@ ul{
     padding: 0.5em 1.3em 0.5em 1.3em ;
     margin-top: 0.5em;
 }
+#btnMain:hover{
+  background-color: #a3a3a396;
+}
 
 /* vertical alignt for jumbotron */
 .vertical-center {
@@ -158,8 +161,6 @@ ul{
       border-left: 1px solid #468C98;  
       padding-right: 2rem;
   }
-
-
 
   /* social link icons */
   .fa-github{
@@ -213,6 +214,13 @@ ul{
       background-color: lightgray;
       height: 2em;
       margin-bottom: 0.5em;
+  }
+
+  .skill:hover{
+    -webkit-box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.59);
+    -moz-box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.59);
+    box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.59);
+
   }
   
   /* SKILL BARS */
